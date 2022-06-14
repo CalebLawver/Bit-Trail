@@ -1,0 +1,1 @@
+//import seeds for multiple tables

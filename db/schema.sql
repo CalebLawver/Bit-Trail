@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS bittrail_db;
+
+CREATE DATABASE bittrail_db;
