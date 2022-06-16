@@ -21,6 +21,14 @@ Trail.init(
             type: DataTypes.STRING,
             allowNull: false
         },
+        miles: {
+            type: DataTypes.DECIMAL(3,3),
+            allowNull: true
+        },
+        kilometers: {
+            type: DataTypes.DECIMAL(3,3),
+            allowNull: true
+        },
         lat: {
             type: DataTypes.DECIMAL(10,7),
             allowNull: false
