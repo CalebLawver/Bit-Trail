@@ -29,7 +29,8 @@ const trails = [
         miles: '1.8',
         kilometers: '2.9',
         difficulty: 'Easy',
-        blurb: 'Short hike, beautiful scenery, chance to see moose and other animals.  Nice place to relax.  It`s fun to see the salamanders too. The kids like that.'
+        blurb: 'Short hike, beautiful scenery, chance to see moose and other animals.  Nice place to relax.  It`s fun to see the salamanders too. The kids like that.',
+        user_id: '1',
       },
       {
         name: 'Lake Mary Trail',
@@ -39,7 +40,8 @@ const trails = [
         miles: '2.6',
         kilometers: '4.2',
         difficulty: 'Medium',
-        blurb: 'DO IT!!!  EXPERIENCE OF A LIFETIME!!!'
+        blurb: 'DO IT!!!  EXPERIENCE OF A LIFETIME!!!',
+        user_id: '1',
       },
       {
         name: 'Grandeur Peak East Trail from Church Fork',
@@ -49,14 +51,25 @@ const trails = [
         miles: '2.6',
         kilometers: '4.2',
         difficulty: 'Medium',
-        blurb: 'DO IT!!!  EXPERIENCE OF A LIFETIME!!!'
+        blurb: 'DO IT!!!  EXPERIENCE OF A LIFETIME!!!',
+        user_id: '1',
       },
   ];
 
   const users = [
     {
-        username: '',
-        email: '',
-        password: '',
-    }
+        username: 'Mike',
+        email: 'mike@example.com',
+        password: 'mikesverysecretpassword1',
+    },
+    {
+        username: 'Emily',
+        email: 'emily@example.com',
+        password: 'notmydogsname2',
+    },
+    {
+        username: 'Frank',
+        email: 'frank@example.com',
+        password: 'password123',
+    },
   ]
