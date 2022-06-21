@@ -4,7 +4,7 @@ const { Trail, User } = require('../../models');
 
 router.get('/', (req, res) => {
     User.findAll({
-        include: [{ model: Trail }],
+        
     })
     .then((users) => res.json(tags))
     .catch((err) => res.status(400).json(err))
