@@ -1,6 +1,6 @@
 const { Trail } = require('../models')
 
-const trailsdata = [
+const traildata = [
     {
       name: 'Donut Falls Trail',
       address: '12 Cottonwood Canyon Rd, Salt Lake City, UT 84121',

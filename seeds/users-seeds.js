@@ -1,6 +1,6 @@
 const { User } = require('../models')
 
-const users = [
+const userdata = [
     {
         username: 'Mike',
         email: 'mike@example.com',
