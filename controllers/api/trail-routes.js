@@ -92,4 +92,24 @@ router.put('/:id', withAuth, (req, res) => {
     });
 });
 
+router.delete('/:id', withAuth, (req, res) => {
+    console.log('id', req.params.id);
+    Trail.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(dbTrailData => {
+        if (!dbTrailData) {
+          res.status(404).json({ message: 'No trail found with this id' });
+          return;
+        }
+        res.json(dbTrailData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
 module.exports = router;
