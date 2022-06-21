@@ -1,4 +1,4 @@
-const { trails } = require('../models')
+const { Trail } = require('../models')
 
 const trailsdata = [
     {
@@ -58,6 +58,6 @@ const trailsdata = [
       },
   ];
 
-  const seedTrails = () => Trail.bulkCreate(trailsdata);
+  const seedTrails = () => Trail.bulkCreate(traildata);
 
   module.exports = seedTrails;

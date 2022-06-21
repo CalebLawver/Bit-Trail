@@ -1,3 +1,5 @@
+const { User } = require('../models')
+
 const users = [
     {
         username: 'Mike',
@@ -15,3 +17,6 @@ const users = [
         password: 'password123',
     },
   ]
+  const seedTrails = () => User.bulkCreate(userdata, {individualHooks: true});
+
+  module.exports = seedTrails;
