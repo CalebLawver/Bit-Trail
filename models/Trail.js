@@ -2,7 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Creating the Trail Model
-class Trail extends Model {}
+class Trail extends Model {
+    // we can create a rating model
+}
 
 // create fields/columns for trail model
 Trail.init(
