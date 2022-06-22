@@ -2,9 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Creating the Trail Model
-class Trail extends Model {
-    // we can create a rating model
-}
+class Trail extends Model {}
 
 // create fields/columns for trail model
 Trail.init(
@@ -24,11 +22,11 @@ Trail.init(
             allowNull: false
         },
         miles: {
-            type: DataTypes.DECIMAL(3,3),
+            type: DataTypes.DECIMAL(5,3),
             allowNull: true
         },
         kilometers: {
-            type: DataTypes.DECIMAL(3,3),
+            type: DataTypes.DECIMAL(5,3),
             allowNull: true
         },
         lat: {

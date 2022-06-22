@@ -5,7 +5,20 @@ const withAuth = require('../../utils/auth');
 
 // get all trails
 router.get('/', (req, res) => {
+    console.log('-----------')
     Trail.findAll({
+    //     attributes: [
+    //         'id',
+    //         'name',
+    //         'address',
+    //         'miles',
+    //         'kilometers',
+    //         'lat',
+    //         'lon',
+    //         'difficulty',
+    //         'blurb',
+    //         'user_id'
+    //     ],
         include: [
             {
                 model: User,
@@ -23,6 +36,21 @@ router.get('/', (req, res) => {
 // get one trail
 router.get('/:id', (req, res) => {
     Trail.findOne({
+        where: {
+            id: req.params.id
+        },
+        // attributes: [
+        //     'id',
+        //     'name',
+        //     'address',
+        //     'miles',
+        //     'kilometers',
+        //     'lat',
+        //     'lon',
+        //     'difficulty',
+        //     'blurb',
+        //     'user_id'
+        // ],
         include: [
             {
                 model: User,
