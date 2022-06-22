@@ -120,7 +120,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-    user.destroy({
+    User.destroy({
         where: {
             id: req.params.id
         }
