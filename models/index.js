@@ -14,16 +14,16 @@ Trail.belongsTo(User, {
 });
 
 User.hasMany(Review, {
-    foreignKey: 'user_id'
-});
-
-Review.belongsTo(User, {
     foreignKey: 'user_id',
     onDelete: 'SET NULL'
 });
 
 Trail.hasMany(Review, {
-    foreignKey: 'trail_id',
+    foreignKey: 'trail_id'
+});
+
+Review.belongsTo(User, {
+    foreignKey: 'user_id',
     onDelete: 'SET NULL'
 });
 
