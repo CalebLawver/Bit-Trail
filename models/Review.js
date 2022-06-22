@@ -1,10 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class Review extends Model {
-
-}
+class Review extends Model {}
 
 Review.init(
     {
@@ -26,6 +23,13 @@ Review.init(
             type: DataTypes.INTEGER,
             references: {
                 model: 'user',
+                key: 'id'
+            }
+        },
+        trail_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'trail',
                 key: 'id'
             }
         }

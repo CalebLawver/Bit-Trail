@@ -23,11 +23,13 @@ Review.belongsTo(User, {
 });
 
 Trail.hasMany(Review, {
-    foreignKey: ''
+    foreignKey: 'trail_id',
+    onDelete: 'SET NULL'
 });
 
 Review.belongsTo(Trail, {
-    foreignKey: ''
+    foreignKey: 'trail_id',
+    onDelete: 'SET NULL'
 });
 
 // we can implement ratings, other reviews for posts

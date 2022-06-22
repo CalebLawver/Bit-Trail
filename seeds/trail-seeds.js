@@ -37,7 +37,8 @@ const traildata = [
       {
         name: 'Lake Mary Trail',
         address: 'Lake Mary Trail, Salt Lake City, UT 84121',
-        
+        miles: 12,
+        kilometers: 15,
         lat: 40.613530,
         lon: -111.808200,
         difficulty: 'Medium',

@@ -1,5 +1,6 @@
 const seedUsers = require('./users-seeds');
 const seedTrails = require('./trail-seeds');
+const seedReviews = require('./review-seeds');
 
 const sequelize = require('../config/connection');
 
@@ -9,6 +10,8 @@ const seedAll = async () => {
   await seedUsers();
   console.log('----------');
   await seedTrails();
+  console.log('----------');
+  await seedReviews();
   console.log('----------');
 
   process.exit(0);
