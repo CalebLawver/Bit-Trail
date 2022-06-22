@@ -6,6 +6,6 @@ const trailRoutes = require('./trail-routes');
 
 // router.use('/route', ***routes)
 router.use('/users', userRoutes);
-router.use('trails', trailRoutes);
+router.use('/trails', trailRoutes);
 
 module.exports = router;

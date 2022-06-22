@@ -13,3 +13,5 @@ Trail.belongsTo(User, {
 });
 
 // we can implement ratings, other reviews for posts
+
+module.exports = { User, Trail };
