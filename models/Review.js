@@ -38,7 +38,7 @@ Review.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'trail'
+        modelName: 'review'
     }
 )
 
