@@ -1,0 +1,60 @@
+:root {
+    --white: #FFFFFF;
+    --accent-color: rgba(50, 145, 50, 0.7);
+    --grey: #C2C2C2;
+    --dark-text: rgb(29, 29, 29);
+    --black: #000000;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Joan', serif;
+}
+
+body {
+    background-color: var(--white);
+}
+
+.navbar {
+    background-color: var(--accent-color);
+    color: var(--dark-text);
+    width: 95vw;
+    height: 85px;
+    margin-top: 5vh;
+    line-height: normal;
+    box-shadow: 3px 3px var(--dark-text);
+}
+
+.logo {
+    display: flex;
+    font-size: xx-large;
+    margin: 2vh 2vw;
+}
+
+.nav-icon {
+    font-size: xx-large;
+}
+
+.logo-name {
+    margin: 0 0 0 3px;
+}
+
+.navbar-links {
+    margin: 2vh 2vw;
+}
+
+.nav-options {
+    list-style: none;
+}
+
+.nav-options li {
+    display: inline;
+    float: left;
+    margin: 0 2vw;
+    font-size: x-large;
+}
+
+.hover-text:hover {
+    border-bottom: 2px solid var(--dark-text);
+}
