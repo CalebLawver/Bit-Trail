@@ -6,4 +6,13 @@ router.get('/', (req, res) => {
     return res.render('homepage', )
 });
 
+router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+      }
+
+    res.render('login');
+});
+
 module.exports = router;
