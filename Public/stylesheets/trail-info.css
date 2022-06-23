@@ -7,7 +7,12 @@
 }
 
 .holder {
-    width: 95vw;
     height: 30vh;
-    border: 0 0 5px 5px solid var(--accent-color);
+    border: 5px solid var(--accent-color);
+    box-shadow: 3px 3px var(--dark-text);
+    margin: 20px 0;
+}
+
+.holder:hover {
+    
 }
