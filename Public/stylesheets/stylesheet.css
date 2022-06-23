@@ -2,7 +2,7 @@
     --white: #FFFFFF;
     --accent-color: rgba(50, 145, 50, 0.7);
     --grey: #C2C2C2;
-    --dark-text: rgb(50, 50, 50);
+    --dark-text: rgb(29, 29, 29);
     --black: #000000;
 }
 
@@ -23,7 +23,7 @@ body {
     height: 85px;
     margin-top: 5vh;
     line-height: normal;
-
+    box-shadow: 3px 3px var(--dark-text);
 }
 
 .logo {
@@ -41,7 +41,7 @@ body {
 }
 
 .navbar-links {
-    
+    margin: 2vh 2vw;
 }
 
 .nav-options {
@@ -51,6 +51,10 @@ body {
 .nav-options li {
     display: inline;
     float: left;
-    margin: 0 5px;
+    margin: 0 2vw;
     font-size: x-large;
+}
+
+.hover-text:hover {
+    border-bottom: 2px solid var(--dark-text);
 }
