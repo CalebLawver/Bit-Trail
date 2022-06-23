@@ -1,0 +1,18 @@
+:root {
+    --white: #FFFFFF;
+    --accent-color: rgba(50, 145, 50, 0.7);
+    --grey: #C2C2C2;
+    --dark-text: rgb(29, 29, 29);
+    --black: #000000;
+}
+
+.holder {
+    height: 30vh;
+    border: 5px solid var(--accent-color);
+    box-shadow: 3px 3px var(--dark-text);
+    margin: 20px 0;
+}
+
+.holder:hover {
+    
+}
