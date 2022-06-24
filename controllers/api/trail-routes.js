@@ -34,7 +34,25 @@ router.get('/', (req, res) => {
 });
 
 router.get('/launch', (req, res) => {
-    Trail.findAll
+    Trail.findAll({
+        include: [
+            {
+                model: User,
+                attributes: ['username']
+            }
+        ],
+        order: [
+            ['created_at', 'ASC']
+        ],
+        limit: [
+            6
+        ]
+    })
+    .then(dbTrailData => res.json(dbTrailData))
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 })
 
 // get one trail

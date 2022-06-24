@@ -58,6 +58,28 @@ const traildata = [
     blurb: "DO IT!!!  EXPERIENCE OF A LIFETIME!!!",
     user_id: 1,
   },
+  {
+    name: "SUPER DUPER AWESOME",
+    address: "Lake Mary Trail, Salt Lake City, UT 84121",
+    miles: 4.6,
+    kilometers: 4.2,
+    lat: 40.61353,
+    lon: -111,
+    difficulty: "Medium",
+    blurb: "DasdaahefwLIFETIME!!!",
+    user_id: 1,
+  },
+  {
+    name: "Graahagweawwwwwwwwgdsdsdag Church Fork",
+    address: "Lakeghqwegewwegwgegeqgweqasdgfasfe City, UT 84121",
+    miles: 2.6,
+    kilometers: 4.2,
+    lat: 40.61353,
+    lon: -111,
+    difficulty: "Medium",
+    blurb: "DO IT!!!hqwegqwgewegwgeqwegETIME!!!",
+    user_id: 1,
+  },
 ];
 
 const seedTrails = () => Trail.bulkCreate(traildata);
