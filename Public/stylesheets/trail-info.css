@@ -10,7 +10,8 @@
 }
 
 .holder {
-    height: 30vh;
+    height: fit-content;
+    min-height: 30vh;
     border: 5px solid var(--accent-color);
     box-shadow: 3px 3px var(--dark-text);
     margin: 20px 0;
@@ -23,6 +24,7 @@
 .difficulty {
     text-align: center;
     box-shadow: 3px 3px var(--dark-text);
+    height: fit-content;
 }
 
 .Easy {
