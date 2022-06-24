@@ -1,4 +1,4 @@
-{{> create-trail post}}
+{{> create-trail Trail}}
 
 {{#if loggedIn}}
 <form class="comment-form">
@@ -12,7 +12,7 @@
 </form>
 {{/if}}
 
-{{> comments post.comments}}
+{{> Review Trail.Review}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
