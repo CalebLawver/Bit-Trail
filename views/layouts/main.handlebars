@@ -12,30 +12,10 @@
   <link rel="stylesheet" href="/stylesheets/stylesheet.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>
-                <a href="/">Bit Trail</a>
-            </h1>
-            <nav>
-                {{#if loggedIn}}
-                <a href="/dashboard">dashboard</a>
-                <button id="logout" class="btn-no-style">logout</button>
-                {{else}}
-                <a href="/login">login</a>
-                {{/if}}
-            </nav>
-        </header>
-        <main>
-            {{{ body }}}
-        </main>
-        <footer>
-            Enjoy your hike!
-        </footer>
-    </div>
     {{> navbar }}
 
     {{{ body }}}
-      <script src="/javascript/logout.js"></script>
+
+<script src="/javascript/logout.js"></script>
 </body>
 </html>
