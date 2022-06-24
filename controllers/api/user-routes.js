@@ -60,6 +60,10 @@ router.get('/:id', (req, res) => {
     });
 });
 
+router.post('/post-info', (req, res) => {
+    res.render('post-info')
+});
+
 router.post('/login', (req, res) => {
     User.findOne({
         where: {
