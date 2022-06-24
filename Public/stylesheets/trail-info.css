@@ -4,6 +4,9 @@
     --grey: #C2C2C2;
     --dark-text: rgb(29, 29, 29);
     --black: #000000;
+    --difficulty-Easy: rgba(50, 145, 50, 0.7);
+    --difficulty-Medium: rgba(242, 243, 174);
+    --difficulty-Hard: rgba(131, 34, 50, 0.7);
 }
 
 .holder {
@@ -13,6 +16,27 @@
     margin: 20px 0;
 }
 
-.holder:hover {
-    
+.post-title-line {
+    margin: 10px 0;
+}
+
+.difficulty {
+    text-align: center;
+    box-shadow: 3px 3px var(--dark-text);
+}
+
+.Easy {
+    background-color: var(--difficulty-Easy);
+}
+
+.Medium {
+    background-color: var(--difficulty-Medium);
+}
+
+.Hard {
+    background-color: var(--difficulty-Hard);
+}
+
+.poster {
+    text-align: end;
 }
