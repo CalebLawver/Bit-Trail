@@ -33,6 +33,10 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/launch', (req, res) => {
+    Trail.findAll
+})
+
 // get one trail
 router.get('/:id', (req, res) => {
     Trail.findOne({
