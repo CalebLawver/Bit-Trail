@@ -7,7 +7,7 @@ async function newFormHandler(event) {
     const response = await fetch(`/api/trails`, {
         method: 'POST',
         body: JSON.stringify({
-          name,
+          tname,
           address,
           miles,
           kilometers,
