@@ -30,7 +30,7 @@ function generatePosts (url, holderId) {
                           </div>
                           <div class="row">
                               <div class="col-6">
-                                  <p>miles: ${miles.toString()}<br>kilometers: ${kilometers.toString()}</p>
+                                  <p>Miles: ${roundOnePlace(miles)}<br>Kilometers: ${roundOnePlace(kilometers)}</p>
                               </div>
                               <div class="col-6">
                                   <p>${cutBlurb(blurb, 120)}</p>
@@ -43,7 +43,7 @@ function generatePosts (url, holderId) {
                           </div>
                       </div>
                   </div>
-              </div>    
+              </div>     
           `
   
           holder.insertAdjacentHTML('beforeend', postText);
@@ -57,6 +57,11 @@ function cutBlurb(blurb, length) {
         return shortBlurb
     }
     return blurb
+}
+
+function roundOnePlace(number) {
+    let rounded = number * 10
+    return (Math.round(rounded))/10
 }
 
 generatePosts('http://localhost:3001/api/trails', '#post-holder');
