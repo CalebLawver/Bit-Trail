@@ -2,7 +2,7 @@ const { Trail } = require("../models");
 
 const traildata = [
   {
-    name: "Donut Falls Trail",
+    tname: "Donut Falls Trail",
     address: "12 Cottonwood Canyon Rd, Salt Lake City, UT 84121",
     miles: 3.3,
     kilometers: 5.3,
@@ -13,7 +13,7 @@ const traildata = [
     user_id: 1,
   },
   {
-    name: "Living Room Lookout Trail",
+    tname: "Living Room Lookout Trail",
     address: "Colorow Dr, Salt Lake City, UT 84108",
     miles: 2.4,
     kilometers: 3.9,
@@ -25,7 +25,7 @@ const traildata = [
     user_id: 1,
   },
   {
-    name: "Cecret Lake Trail",
+    tname: "Cecret Lake Trail",
     address: "Cecret Lake Trail, Alta, UT 84092",
     miles: 1.8,
     kilometers: 2.9,
@@ -37,7 +37,7 @@ const traildata = [
     user_id: 1,
   },
   {
-    name: "Lake Mary Trail",
+    tname: "Lake Mary Trail",
     address: "Lake Mary Trail, Salt Lake City, UT 84121",
     miles: 12,
     kilometers: 15,
@@ -48,7 +48,7 @@ const traildata = [
     user_id: 1,
   },
   {
-    name: "Grandeur Peak East Trail from Church Fork",
+    tname: "Grandeur Peak East Trail from Church Fork",
     address: "Lake Mary Trail, Salt Lake City, UT 84121",
     miles: 2.6,
     kilometers: 4.2,
@@ -59,7 +59,7 @@ const traildata = [
     user_id: 1,
   },
   {
-    name: "SUPER DUPER AWESOME",
+    tname: "SUPER DUPER AWESOME",
     address: "Lake Mary Trail, Salt Lake City, UT 84121",
     miles: 4.6,
     kilometers: 4.2,
@@ -70,7 +70,7 @@ const traildata = [
     user_id: 1,
   },
   {
-    name: "Graahagweawwwwwwwwgdsdsdag Church Fork",
+    tname: "Graahagweawwwwwwwwgdsdsdag Church Fork",
     address: "Lakeghqwegewwegwgegeqgweqasdgfasfe City, UT 84121",
     miles: 2.6,
     kilometers: 4.2,
