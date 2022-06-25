@@ -1,20 +1,28 @@
     <!-- nav bar-->
-    <div class="navbar">
-       <div class="logo hover-text">
-           <span class="material-symbols-outlined nav-icon">forest</span>
-           <p class="logo-name">Bit Trail</p>
-       </div>
-       <nav class="navbar-links">
-            <ul class="nav-options">
-                <li class="hover-text">
-                    Explore
-                </li>
-                <li class="hover-text">
-                    Post
-                </li>
-                <li class="hover-text">
-                    Login
-                </li>
-            </ul>
-       </nav> 
+<div class="navbar">
+    <div class="logo hover-text">
+      <span class="material-symbols-outlined nav-icon">forest</span>
+      <a href="/" class="logo-name">Bit Trail</a>
     </div>
+    <nav class="navbar-links">
+      <ul class="nav-options">
+        <li class="hover-text">
+          Explore
+        </li>
+        {{#if loggedIn}}
+        <li>
+          <a href="/create-trails">Dashboard</a>
+          <button id="logout" class="hover-text">Logout</button>
+        </li>
+        {{else}}
+        <li class="hover-text">
+          <a href="/login">Login</a>
+        </li>
+        {{/if}}
+      </ul>
+    </nav>
+  </div>
+
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}

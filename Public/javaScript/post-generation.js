@@ -12,14 +12,14 @@ function generatePosts (url, holderId) {
           //find the holder for the posts
           let holder = document.querySelector(holderId);
           //generate the internals of the post
-          let { name, address, miles, kilometers, difficulty, blurb } = data[i];
+          let { tname, address, miles, kilometers, difficulty, blurb } = data[i];
           let postText = `
                   <div class="col-6">
                       <div class="holder">
                       <div class="container">
                           <div class="row post-title-line">
                               <div class="col-8">
-                                  <h2>${name}</h2>
+                                  <h2>${tname}</h2>
                               </div>
                               <div class="col-4 difficulty ${difficulty}">
                                   <h2>${difficulty}</h2>
@@ -47,6 +47,10 @@ function generatePosts (url, holderId) {
           `
   
           holder.insertAdjacentHTML('beforeend', postText);
+
+          if (i > 19) {
+            return
+          }
       }
     }); 
 }

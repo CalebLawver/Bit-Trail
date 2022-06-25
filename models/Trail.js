@@ -13,7 +13,7 @@ Trail.init(
             primaryKey: true,
             autoIncrement: true
         },
-        name: {
+        tname: {
             type: DataTypes.STRING,
             allowNull: false
         },
