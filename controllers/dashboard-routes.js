@@ -31,11 +31,15 @@ router.get('/', withAuth, (req, res) => {
 });
 
 router.get('/edit/:id', withAuth, (req, res) => {
-    this.post.findByPk(req.params.id, {
+    Trail.findByPk(req.params.id, {
         include: [
             {
                 model: User,
                 attributes: ['username']
+            }, 
+            {
+                model: Review,
+                attributes: ['rev_text', 'rev_diff']
             }
         ]
     })
