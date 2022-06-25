@@ -1,18 +1,19 @@
-{{> create-trail Trail}}
+<section>
+  <h2>Add New Trail</h2>
 
-{{#if loggedIn}}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-url">Link</label>
+      <input id="post-url" name="post-url" />
+    </div>
+    <button type="submit" class="btn">Add Trail</button>
+  </form>
+</section>
 
-  <div>
-    <button type="submit">add comment</button>
-  </div>
-</form>
-{{/if}}
-
-{{> Review Trail.Review}}
 
 {{#if loggedIn}}
 <script src="/javascript/add-trail.js"></script>
