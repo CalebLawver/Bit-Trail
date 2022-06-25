@@ -30,9 +30,9 @@
     <div>
       <label for="difficulty">Difficulty</label>
         <select name="difficulty" id="difficulty">
-          <option value="easy">Easy</option>
-          <option value="medium">Medium</option>
-          <option value="hard">Hard</option>          
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>          
         </select>
     </div>
     <div>
@@ -44,11 +44,11 @@
   </form>
 </section>
 
-{{#if trails.length}}
+{{#if trail.length}}
 <section>
   <h2>Your Trails</h2>
   <ol>
-    {{#each trails as |trail|}}
+    {{#each trail as |trail|}}
     <li>
       {{> trail-info trail}}
       <a href="/create-trails/edit-trail/{{trail.id}}" class="">Edit Trail</a>
