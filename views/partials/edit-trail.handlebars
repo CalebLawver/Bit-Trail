@@ -1,0 +1,39 @@
+<article>
+    <a href="/create-trails"> &larr; Back to Dashboard</a>
+    <h2>
+        Edit Trail
+    </h2>
+    <form class="edit-trail-form">
+        <div>
+            <input name="tname" type="text" value="{{trail.tname}}"/>
+            <input name="address" type="text" value="{{trail.address}}"/>
+            <input name="miles" type="number" step="any" value="{{trail.miles}}" />
+            <input name="kilometers" type="number" step="any" value="{{trail.kilometers}}" />
+            <input name="lat" type="number" step="any" value="{{trail.lat}}" />
+            <input name="lon" type="number" step="any" value="{{trail.lon}}" />
+            <select name="difficulty">
+                <option value="{{trail.difficulty}}"></option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select> 
+            <input name="blurb" type="text" value="{{trail.blurb}}" />
+        </div>
+    </form>
+
+</article>
+
+<form class="review-form">
+    <div>
+        <textarea name="rev-text"></textarea>
+    </div>
+    <div>
+        <button type="submit">add review</button>
+    </div>
+</form>
+
+{{ review trail.review}}
+
+<script src="/javascript/edit-trail.js"></script>
+<script src="/javascript/delete-trail.js"></script>
+<script src="/javascript/review.js"></script>

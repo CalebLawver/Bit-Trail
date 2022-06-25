@@ -22,7 +22,6 @@ async function newFormHandler(event) {
           lon,
           difficulty,
           blurb
-
         }),
         headers: {
           'Content-Type': 'application/json'
