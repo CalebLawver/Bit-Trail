@@ -1,32 +1,26 @@
-<div class="col-6">
 
+<div class="col-6">
     <div class="holder">
         <div class="container">
             <div class="row post-title-line">
                 <div class="col-8">
-                    <h2>Donut Falls Trail</h2>
+                    <h2>{{tname}}</h2>
                 </div>
-                <div class="col-4 difficulty Easy">
-                    <h2>Easy</h2>
-                </div>
-            </div>
-            <div class="row">
-                <h4>12 Cottonwood Canyon Rd, Salt Lake City, UT 84121</h4>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <p>miles: 3.3<br>kilometers: 5.3</p>
-                </div>
-                <div class="col-6">
-                    <p>A very easy and family/kids-friendly hiking trail.</p>
+                <div class="col-4 difficulty ${difficulty}">
+                    <h2>{{difficulty}}</h2>
                 </div>
             </div>
-            <div class="row"> 
-                <div class="col poster">
-                    <h4>Posted by: Mike</h4>
-                </div>
+        <div class="row">
+            <h4>{{address}}</h4>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Miles: {{miles}}<br />Kilometers:
+                    {{kilometers}}</p>
+            </div>
+            <div class="col-6">
+                <p>{{blurb}}</p>
             </div>
         </div>
     </div>
-    
 </div>
