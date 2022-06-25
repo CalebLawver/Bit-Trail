@@ -1,7 +1,7 @@
 async function newFormHandler(event) {
     event.preventDefault();
 
-    const response = await fetch(`/api/posts`, {
+    const response = await fetch(`/api/trails`, {
         method: 'POST',
         body: JSON.stringify({
           name,
