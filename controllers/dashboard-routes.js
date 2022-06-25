@@ -30,7 +30,7 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
-router.get('/edit/:id', withAuth, (req, res) => {
+router.get('/edit-trail/:id', withAuth, (req, res) => {
     Trail.findByPk(req.params.id, {
         include: [
             {
