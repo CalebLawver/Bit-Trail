@@ -14,39 +14,37 @@
 </head>
 
 <body>
-    <div class="navbar">
-       <div class="logo hover-text">
-           <span class="material-symbols-outlined nav-icon">forest</span>
-           <p class="logo-name">Bit Trail</p>
-       </div>
-       <nav class="navbar-links">
-            <ul class="nav-options">
-                <li class="hover-text">
-                    Explore
-                </li>
-                <li class="hover-text">
-                    <a href="/create-trail">Post</a>
-                </li>
-                {{#if loggedIn}}
-                <li>
-                <a href="/create-trail">Create Trail</a>
-                <button id="logout" class="hover-text">Logout</button>
-                </li>
-                {{else}}
-                <li class="hover-text">
-                    <a href="/login">Login</a>
-                </li>
-                {{/else}}
-            </ul>
-       </nav> 
+  {{!-- <div class="navbar">
+    <div class="logo hover-text">
+      <span class="material-symbols-outlined nav-icon">forest</span>
+      <p href="/" class="logo-name">Bit Trail</p>
     </div>
+    <nav class="navbar-links">
+      <ul class="nav-options">
+        <li class="hover-text">
+          Explore
+        </li>
+        {{#if loggedIn}}
+        <li>
+          <a href="/create-trails">Dashboard</a>
+          <button id="logout" class="hover-text">Logout</button>
+        </li>
+        {{else}}
+        <li class="hover-text">
+          <a href="/login">Login</a>
+        </li>
+        {{/if}}
+      </ul>
+    </nav>
+  </div> --}}
+  {{> navbar}}
+<main>
+  {{{ body }}}  
+</main>
 
-
-
-  {{{ body }}}
-{{#if loggedIn}}
-<script src="/javascript/logout.js"></script>
-{{/if}}
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>

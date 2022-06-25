@@ -1,9 +1,33 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
+const { Trail, Review, User } = require('../models');
 
 router.get('/', (req, res) => {
-    console.log('showing home page')
-    return res.render('homepage', )
+    Trail.findAll({
+        include: [
+            {
+                model: User,
+                attributes: ['username']
+            }
+        ],
+        order: [
+            ['created_at', 'ASC']
+        ],
+        limit: [
+            6
+        ]
+    })
+    .then(dbTrailData => {
+        const trails = dbTrailData.map(trail => trail.get({ plain: true}));
+        res.render('homepage', {
+            trails,
+            loggedIn: req.session.loggedIn
+        });
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 });
 
 router.get('/login', (req, res) => {

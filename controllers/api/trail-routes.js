@@ -7,45 +7,11 @@ const withAuth = require('../../utils/auth');
 router.get('/', (req, res) => {
     console.log('-----------')
     Trail.findAll({
-    //     attributes: [
-    //         'id',
-    //         'name',
-    //         'address',
-    //         'miles',
-    //         'kilometers',
-    //         'lat',
-    //         'lon',
-    //         'difficulty',
-    //         'blurb',
-    //         'user_id'
-    //     ],
         include: [
             {
                 model: User,
                 attributes: ['username']
             }
-        ]
-    })
-    .then(dbTrailData => res.json(dbTrailData))
-    .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    });
-});
-
-router.get('/launch', (req, res) => {
-    Trail.findAll({
-        include: [
-            {
-                model: User,
-                attributes: ['username']
-            }
-        ],
-        order: [
-            ['created_at', 'ASC']
-        ],
-        limit: [
-            6
         ]
     })
     .then(dbTrailData => res.json(dbTrailData))
@@ -61,18 +27,6 @@ router.get('/:id', (req, res) => {
         where: {
             id: req.params.id
         },
-        // attributes: [
-        //     'id',
-        //     'name',
-        //     'address',
-        //     'miles',
-        //     'kilometers',
-        //     'lat',
-        //     'lon',
-        //     'difficulty',
-        //     'blurb',
-        //     'user_id'
-        // ],
         include: [
             {
                 model: User,
@@ -95,7 +49,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', withAuth, (req, res) => {
     Trail.create({
-        name: req.body.name,
+        tname: req.body.tname,
         address: req.body.address,
         miles: req.body.miles,
         lat: req.body.lat,
@@ -116,7 +70,7 @@ router.post('/', withAuth, (req, res) => {
 router.put('/:id', withAuth, (req, res) => {
     Trail.update(
         {
-            name: req.body.name,
+            tname: req.body.tname,
             address: req.body.address,
             miles: req.body.miles,
             lat: req.body.lat,

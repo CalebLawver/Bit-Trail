@@ -22,7 +22,7 @@ router.get('/:id', (req, res) => {
       include: [
         {
           model: Trail,
-          attributes: ['id', 'name', 'blurb', 'created_at']
+          attributes: ['id', 'tname', 'blurb', 'created_at']
         }
       ]
     })

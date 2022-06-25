@@ -1,8 +1,15 @@
 async function newFormHandler(event) {
     event.preventDefault();
 
-  const title = document.querySelector('input[name="post-title"]').value;
-  const post_url = document.querySelector('input[name="post-url"]').value;
+  const tname = document.querySelector('input[name="tname"]').value;
+  const address = document.querySelector('input[name="address"]').value;
+  const miles = document.querySelector('input[name="miles"]').value;
+  const kilometers = document.querySelector('input[name="kilometers"]').value;
+  const lat = document.querySelector('input[name="lat"]').value;
+  const lon = document.querySelector('input[name="lon"]').value;
+  const difficulty = document.querySelector('select[name="difficulty"]').value;
+  const blurb = document.querySelector('input[name="blurb"]').value;
+
 
     const response = await fetch(`/api/trails`, {
         method: 'POST',

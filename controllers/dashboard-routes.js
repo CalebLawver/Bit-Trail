@@ -22,7 +22,7 @@ router.get('/', withAuth, (req, res) => {
     })
     .then(dbTrailData => {
         const trails = dbTrailData.map(trail => trail.get({ plain: true }));
-        res.render('dashboard', { trails, loggedIn: true });
+        res.render('create-trails', { trails, loggedIn: true });
     })
     .catch(err => {
         console.log(err);
