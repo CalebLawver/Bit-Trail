@@ -10,10 +10,8 @@
           Explore
         </li>
         {{#if loggedIn}}
-        <li>
-          <a href="/create-trails">Dashboard</a>
-          <button id="logout" class="hover-text">Logout</button>
-        </li>
+          <li href="/create-trails">Dashboard</li>
+          <li id="logout" class="hover-text">Logout</li>
         {{else}}
         <li class="hover-text">
           <a href="/login">Login</a>
