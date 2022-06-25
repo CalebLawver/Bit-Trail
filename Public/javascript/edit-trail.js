@@ -15,14 +15,14 @@ async function editFormHandler(event) {
     const response = await fetch(`/api/trails/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
-            tname,
-            address,
-            miles,
-            kilometers,
-            lat,
-            lon,
-            difficulty,
-            blurb
+            "tname": tname,
+            "address": address,
+            "miles": miles,
+            "kilometers": kilometers,
+            "lat": lat,
+            "lon": lon,
+            "difficulty": difficulty,
+            "blurb": blurb, 
         }),
         headers: {
             'Content-Type': 'application/json'

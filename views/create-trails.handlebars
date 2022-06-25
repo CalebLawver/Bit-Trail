@@ -47,14 +47,14 @@
 {{#if trail.length}}
 <section>
   <h2>Your Trails</h2>
-  <ol>
-    {{#each trail as |trail|}}
-    <li>
-      {{> trail-info trail}}
-      <a href="/create-trails/edit-trail/{{trail.id}}" class="">Edit Trail</a>
-    </li>
-    {{/each}}
-  </ol> 
+  <div class="container">
+    <div class="row">
+      {{#each trail as |trail|}}
+      {{#> trail-info trail}}
+      {{/trail-info}}
+      {{/each}}
+    </div>
+  </div> 
 </section>
 {{/if}}
 
