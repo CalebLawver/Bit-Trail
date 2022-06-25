@@ -30,7 +30,7 @@ async function newFormHandler(event) {
       });
 
     if (response.ok) {
-        document.location.replace('/homepage');
+        document.location.replace('/create-trails/');
       } else {
         alert(response.statusText);
       }

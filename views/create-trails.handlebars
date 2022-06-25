@@ -13,15 +13,15 @@
     </div>
     <div>
       <label for="miles">Length in miles</label>
-      <input type="number" id="miles" name="miles" />
+      <input type="number" step="any" id="miles" name="miles" />
     </div>
     <div>
       <label for="kilometers">Length in kilometers</label>
-      <input type="number" id="kilometers" name="kilometers" />
+      <input type="number" step="any" id="kilometers" name="kilometers" />
     </div>
     <div>
       <label for="lat">Latitude</label>
-      <input type="number" id="lat" name="lat" />
+      <input type="number" step="any" step="any" id="lat" name="lat" />
     </div>
     <div>
       <label for="lon">Longitude</label>
@@ -43,5 +43,19 @@
     <button type="submit" class="btn">Add Trail</button>
   </form>
 </section>
+
+{{#if trails.length}}
+<section>
+  <h2>Your Trails</h2>
+  <ol>
+    {{#each trails as |trail|}}
+    <li>
+      {{> trail-info trail}}
+      <a href="/create-trails/edit/{{trail.id}}" class="">Edit Trail</a>
+    </li>
+    {{/each}}
+  </ol> 
+</section>
+{{/if}}
 
 <script src="/javascript/add-trail.js"></script>
