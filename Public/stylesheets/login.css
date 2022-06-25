@@ -33,11 +33,13 @@
 
 label {
     color: var(--dark-text);
-    min-width: fit-content;
+    min-width: 6.5vw;
 }
 
 .login-button-holder {
-    text-align: right;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 .login-button {
