@@ -44,18 +44,4 @@
   </form>
 </section>
 
-{{#if trail.length}}
-<section>
-  <h2>Your Trails</h2>
-  <div class="container">
-    <div class="row">
-      {{#each trail as |trail|}}
-      {{#> trail-info trail}}
-      {{/trail-info}}
-      {{/each}}
-    </div>
-  </div> 
-</section>
-{{/if}}
-
 <script src="/javascript/add-trail.js"></script>

@@ -1,0 +1,32 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="d-flex justify-content-around">
+        <div class="col-10 user-info-holder">
+          <h1 class="welcome" id="welcome">Welcome {{ userName }}!<h1></h1>
+          <div class="info-holder">
+            <h4>About Bit Trail:</h4>
+            <h5 class="info-section">Bit trail is all about sharing, sharing trails that is! We want you to be able to share all your favorite hikes with the world, and maybe at the same time you'll find a new favorite.</h5>
+          </div>
+          <div class="background col-12"></div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+
+{{#if trail.length}}
+<section>
+  <h2>Your Trails</h2>
+  <div class="container">
+    <div class="row">
+      {{#each trail as |trail|}}
+      {{#> trail-info trail}}
+      {{/trail-info}}
+      {{/each}}
+    </div>
+  </div> 
+</section>
+{{/if}}
+
+<script src="/javascript/dashboard.js"></script>

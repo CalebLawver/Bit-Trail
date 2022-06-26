@@ -1,0 +1,32 @@
+:root {
+    --white: #FFFFFF;
+    --accent-color: rgba(50, 145, 50, 0.7);
+    --grey: #C2C2C2;
+    --dark-text: rgb(29, 29, 29);
+    --black: #000000;
+}
+
+.user-info-holder {
+    margin-top: 3vh;
+    border: 5px solid var(--accent-color);
+    box-shadow: 3px 3px var(--dark-text);
+}   
+
+.welcome {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.background {
+    height: 25vh;
+    background-image: url("/assets/background.png");
+    background-size:contain;
+}
+
+.info-holder {
+    padding: 2vh 1vw;
+}
+
+.info-section {
+    margin: 3vh 0 5vh 0;
+}
