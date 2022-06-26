@@ -12,7 +12,7 @@ function generatePosts (url, holderId) {
           //find the holder for the posts
           let holder = document.querySelector(holderId);
           //generate the internals of the post
-          let { tname, address, miles, kilometers, difficulty, blurb } = data[i];
+          let { id, tname, address, miles, kilometers, difficulty, blurb } = data[i];
           let postText = `
                   <div class="col-6">
                       <div class="holder">
@@ -41,6 +41,9 @@ function generatePosts (url, holderId) {
                                   <h4>Posted by: ${data[i].user.username}</h4>
                               </div>
                           </div>
+                        <div class="col-3">
+                            <a href="/api/trails/${id}"><button class="add-trail">Trail's Page</button></a>
+                        </div>
                       </div>
                   </div>
               </div>     
