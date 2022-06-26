@@ -1,12 +1,10 @@
 async function editFormHandler(event) {
-    event.preventDefault();
-
     const tname = document.querySelector('input[name="tname"]').value.trim();
     const address = document.querySelector('input[name="address"]').value.trim();
     const miles = document.querySelector('input[name="miles"]').value.trim();
     const kilometers = document.querySelector('input[name="kilometers"]').value.trim();
-    const lat = document.querySelector('input[name="lat"]').value.trim();
-    const lon = document.querySelector('input[name="lon"]').value.trim();
+    // const lat = document.querySelector('input[name="lat"]').value.trim();
+    // const lon = document.querySelector('input[name="lon"]').value.trim();
     const difficulty = document.querySelector('select[name="difficulty"]').value.trim();
     const blurb = document.querySelector('input[name="blurb"]').value.trim();
     const id = window.location.toString().split('/')[
@@ -15,14 +13,14 @@ async function editFormHandler(event) {
     const response = await fetch(`/api/trails/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
-            "tname": tname,
-            "address": address,
-            "miles": miles,
-            "kilometers": kilometers,
-            "lat": lat,
-            "lon": lon,
-            "difficulty": difficulty,
-            "blurb": blurb, 
+            tname,
+            address,
+            miles,
+            kilometers,
+            // lat,
+            // lon,
+            difficulty,
+            blurb, 
         }),
         headers: {
             'Content-Type': 'application/json'
@@ -36,4 +34,4 @@ async function editFormHandler(event) {
     }
 }
 
-document.querySelector('.edit-trail-form').addEventListener('submit', editFormHandler);
+document.getElementById('.edit-trail-form').addEventListener('onClick', editFormHandler);

@@ -1,39 +1,45 @@
-<article>
-    <a href="/create-trails"> &larr; Back to Dashboard</a>
-    <h2>
-        Edit Trail
+<section>
+    <div>
+        <a href="/create-trails"> &larr; Back to Dashboard</a>
+    </div>
+    <h2 class="welcome">
+        Update Trail
     </h2>
-    <form class="edit-trail-form">
-        <div>
-            <input name="tname" type="text" value="{{trail.tname}}"/>
-            <input name="address" type="text" value="{{trail.address}}"/>
-            <input name="miles" type="number" step="any" value="{{trail.miles}}" />
-            <input name="kilometers" type="number" step="any" value="{{trail.kilometers}}" />
-            <input name="lat" type="number" step="any" value="{{trail.lat}}" />
-            <input name="lon" type="number" step="any" value="{{trail.lon}}" />
-            <select name="difficulty">
-                <option value="{{trail.difficulty}}"></option>
-                <option value="Easy">Easy</option>
-                <option value="Medium">Medium</option>
-                <option value="Hard">Hard</option>
-            </select> 
-            <input name="blurb" type="text" value="{{trail.blurb}}" />
+  <form class="edit-trail-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 label-col">
+          <label for="tname">Trail Name:</label>
+          <label for="address">Address:</label>
+          <label for="miles">Length in miles:</label>
+          <label for="kilometers">Length in kilometers:</label>
+          
         </div>
-        <button type="submit" class="btn">Press me to Update</button>
-    </form>
-
-</article>
-
-{{!-- <form class="review-form">
-    <div>
-        <textarea name="rev-text"></textarea>
-    </div>
-    <div>
-        <button type="submit">add review</button>
-    </div>
-</form>
-
-{{ review trail.review}} --}}
+        <div class="col-6 input-col">
+          <input type="text" id="tname" name="tname" value="{{trail.tname}}"/>
+          <input type="text" id="address" name="address" value="{{trail.address}}"/>
+          <input type="number" step="any" id="miles" name="miles" value="{{trail.miles}}"/>
+          <input type="number" step="any" id="kilometers" name="kilometers" value="{{trail.kilometers}}"/>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-12">
+          <label for="difficulty">Difficulty:</label>
+          <select name="difficulty" id="difficulty" value="{{trail.difficulty}}">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>          
+          </select>
+      </div>
+      <div class="row justify-content-around">
+        <label for="blurb">Blurb:</label>
+        <input type="text" id="blurb" name="blurb" value="{{trail.blurb}}"/>
+        <div class="add-trail-holder col-4">
+          <h3 id="update-trail" type="submit" class="btn add-trail" onclick="editFormHandler();">Update Trail</h3>
+        </div>
+      </div>
+  </form>
+</section>
 
 <script src="/javascript/edit-trail.js"></script>
 <script src="/javascript/delete-trail.js"></script>
