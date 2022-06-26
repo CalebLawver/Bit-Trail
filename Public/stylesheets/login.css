@@ -4,6 +4,7 @@
     --grey: #C2C2C2;
     --dark-text: rgb(29, 29, 29);
     --black: #000000;
+    
 }
 
 .login-page {
@@ -11,6 +12,10 @@
     border: 5px solid var(--accent-color);
     box-shadow: 3px 3px var(--dark-text);
     padding: 3vh 3vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/DSC_6069.jpg) center center;
+    background-size: cover;
+    position: relative;
+    color: white;
 }
 
 .login-holder {
@@ -20,6 +25,9 @@
     box-shadow: 3px 3px var(--dark-text);
     padding: 2vh;
     margin-top: 3vh;
+    color: white;
+    background-color: grey;
+    
 }
 
 .login-header {
@@ -32,7 +40,7 @@
 }
 
 label {
-    color: var(--dark-text);
+    color: white;
     min-width: 6.5vw;
 }
 
@@ -43,9 +51,9 @@ label {
 }
 
 .login-button {
-    background-color: var(--white);
-    border: 3px solid var(--accent-color);
-    color: var(--accent-color);
+    background-color: var(--accent-color);
+    border: 3px solid black;
+    color: black;
     font-weight: bold;
     padding: 3px 5px;
 }
