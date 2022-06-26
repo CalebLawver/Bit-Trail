@@ -1,27 +1,26 @@
-<!--
-<div class="holder">
-    <ol class="post-list">
-    {{#each posts as |post|}}
-  <li>
-    <article class="post">
-      <div class="title">
-        <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
-            <span>({{post.post_url}})</span>
-                </div>
-                    <div class="meta">
-                        {{post.vote_count}} point(s) by {{post.user.username}} on
-                        {{post.created_at}}
-        |
-                        <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
-                    </div>
-                </article>
-            </li>
-        {{/each}}
-    </ol>
-</div>
--->
 <div class="col-6">
-      <div class="holder">
-        
-      </div>
+    <div class="holder">
+        <div class="container">
+            <div class="row post-title-line">
+                <div class="col-8">
+                    <h2>{{tname}}</h2>
+                </div>
+                <div class="col-4 difficulty {{difficulty}}">
+                    <h2>{{difficulty}}</h2>
+                </div>
+            </div>
+        <div class="row">
+            <h4>{{address}}</h4>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Miles: {{miles}}<br />Kilometers:
+                    {{kilometers}}</p>
+            </div>
+                <div class="col-6">
+                    <p>{{blurb}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

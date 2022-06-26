@@ -13,17 +13,18 @@
             <input name="lon" type="number" step="any" value="{{trail.lon}}" />
             <select name="difficulty">
                 <option value="{{trail.difficulty}}"></option>
-                <option value="easy">Easy</option>
-                <option value="medium">Medium</option>
-                <option value="hard">Hard</option>
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
             </select> 
             <input name="blurb" type="text" value="{{trail.blurb}}" />
         </div>
+        <button type="submit" class="btn">Press me to Update</button>
     </form>
 
 </article>
 
-<form class="review-form">
+{{!-- <form class="review-form">
     <div>
         <textarea name="rev-text"></textarea>
     </div>
@@ -32,7 +33,7 @@
     </div>
 </form>
 
-{{ review trail.review}}
+{{ review trail.review}} --}}
 
 <script src="/javascript/edit-trail.js"></script>
 <script src="/javascript/delete-trail.js"></script>

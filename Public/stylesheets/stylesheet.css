@@ -58,3 +58,26 @@ body {
 .hover-text:hover {
     border-bottom: 2px solid var(--dark-text);
 }
+
+
+a:link { 
+    text-decoration: none;
+    color: var(--dark-text); 
+}
+
+a:visited { 
+    text-decoration: none;
+    color: var(--dark-text); 
+}
+
+
+a:hover { 
+    text-decoration: none;
+    color: var(--dark-text); 
+}
+
+
+a:active { 
+    text-decoration: none;
+    color: var(--dark-text);     
+}

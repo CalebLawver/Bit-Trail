@@ -1,0 +1,85 @@
+:root {
+    --white: #FFFFFF;
+    --accent-color: rgba(50, 145, 50, 0.7);
+    --grey: #C2C2C2;
+    --dark-text: rgb(29, 29, 29);
+    --black: #000000;
+}
+
+.user-info-holder {
+    margin-top: 3vh;
+    border: 5px solid var(--accent-color);
+    box-shadow: 3px 3px var(--dark-text);
+}   
+
+.welcome {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.background {
+    height: 25vh;
+    background-image: url("/assets/background.png");
+    background-size:contain;
+}
+
+.info-holder {
+    padding: 2vh 1vw;
+}
+
+.info-section {
+    margin: 3vh 0 5vh 0;
+}
+
+.your-trails-title {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.post-new-trail {
+    margin-bottom: 10vh;
+    border: 5px solid var(--accent-color);
+    box-shadow: 3px 3px var(--dark-text);
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-button-text {
+    font-size: xx-large;
+    margin-bottom: 2vh;
+}
+
+.label-col {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.label-col label {
+    padding-top: 1vh;
+}
+
+.input-col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-col input {
+    margin-top: .5vh;
+}
+
+.add-trail-holder {
+    margin: 3vh 0;
+    border: 5px solid var(--accent-color);
+    
+}
+
+.add-trail {
+    font-size: large;
+    color: var(--accent-color);
+    font-weight: bold;
+}

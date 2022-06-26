@@ -22,20 +22,20 @@ Trail.init(
             allowNull: false
         },
         miles: {
-            type: DataTypes.DECIMAL(5,3),
+            type: DataTypes.DECIMAL(6,3),
             allowNull: true
         },
         kilometers: {
-            type: DataTypes.DECIMAL(5,3),
+            type: DataTypes.DECIMAL(6,3),
             allowNull: true
         },
         lat: {
             type: DataTypes.DECIMAL(10,7),
-            allowNull: false
+            allowNull: true
         },
         lon: {
             type: DataTypes.DECIMAL(10,7),
-            allowNull: false
+            allowNull: true
         },
         difficulty: {
             type: DataTypes.STRING,

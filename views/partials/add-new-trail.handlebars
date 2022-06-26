@@ -1,0 +1,38 @@
+<section>
+  <form class="new-post-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 label-col">
+          <label for="tname">Trail Name:</label>
+          <label for="address">Address:</label>
+          <label for="miles">Length in miles:</label>
+          <label for="kilometers">Length in kilometers:</label>
+          
+        </div>
+        <div class="col-6 input-col">
+          <input type="text" id="tname" name="tname"/>
+          <input type="text" id="address" name="address" />
+          <input type="number" step="any" id="miles" name="miles" />
+          <input type="number" step="any" id="kilometers" name="kilometers" />
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-12">
+          <label for="difficulty">Difficulty:</label>
+          <select name="difficulty" id="difficulty">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>          
+          </select>
+      </div>
+      <div class="row justify-content-around">
+        <label for="blurb">Blurb:</label>
+        <input type="text" id="blurb" name="blurb" />
+        <div class="add-trail-holder col-4">
+          <h3 id="add-new-trail" type="submit" class="btn add-trail" onclick="newFormHandler();">Add Trail</h3>
+        </div>
+      </div>
+  </form>
+</section>
+
+<script src="/javascript/add-trail.js"></script>

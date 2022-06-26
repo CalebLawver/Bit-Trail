@@ -21,8 +21,9 @@ router.get('/', withAuth, (req, res) => {
         ]
     })
     .then(dbTrailData => {
-        const trails = dbTrailData.map(trail => trail.get({ plain: true }));
-        res.render('create-trails', { trails, loggedIn: true });
+        const trail = dbTrailData.map(trail => trail.get({ plain: true }));
+        const userName = req.session.username
+        res.render('dashboard', { trail, userName , loggedIn: true });
     })
     .catch(err => {
         console.log(err);
@@ -30,7 +31,7 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
-router.get('/edit/:id', withAuth, (req, res) => {
+router.get('/edit-trail/:id', withAuth, (req, res) => {
     Trail.findByPk(req.params.id, {
         include: [
             {

@@ -2,22 +2,16 @@
 <div class="navbar">
     <div class="logo hover-text">
       <span class="material-symbols-outlined nav-icon">forest</span>
-      <p href="/" class="logo-name">Bit Trail</p>
+      <a href="/" class="logo-name">Bit Trail</a>
     </div>
     <nav class="navbar-links">
       <ul class="nav-options">
-        <li class="hover-text">
-          Explore
-        </li>
+        <a href="/"><li class="hover-text">Explore</li></a>
         {{#if loggedIn}}
-        <li>
-          <a href="/create-trails">Dashboard</a>
-          <button id="logout" class="hover-text">Logout</button>
-        </li>
+          <a href="/create-trails"><li class="hover-text">Dashboard</li></a>
+          <li id="logout" class="hover-text">Logout</li>
         {{else}}
-        <li class="hover-text">
-          <a href="/login">Login</a>
-        </li>
+          <a href="/login"><li class="hover-text">Login</li></a>
         {{/if}}
       </ul>
     </nav>
