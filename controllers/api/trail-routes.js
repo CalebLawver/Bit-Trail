@@ -52,8 +52,9 @@ router.post('/', withAuth, (req, res) => {
         tname: req.body.tname,
         address: req.body.address,
         miles: req.body.miles,
-        lat: req.body.lat,
-        lon: req.body.lon,
+        kilometers: req.body.kilometers,
+        lat: 0,
+        lon: 0,
         difficulty: req.body.difficulty,
         blurb: req.body.blurb,
         user_id: req.session.user_id

@@ -15,9 +15,10 @@
   </div>
 </section>
 
-{{#if trail.length}}
+
 <section>
-  <h2>Your Trails</h2>
+  {{#if trail.length}}
+  <h2 class="your-trails-title">Your Trails:</h2>
   <div class="container">
     <div class="row">
       {{#each trail as |trail|}}
@@ -25,8 +26,15 @@
       {{/trail-info}}
       {{/each}}
     </div>
+    {{/if}}
+    <div class="row justify-content-around">
+      <div class="col-6 post-new-trail">
+        <h4 class="post-button-text">Post New Trail:</h4>
+        {{> add-new-trail }}
+      </div>
+    </div>
   </div> 
 </section>
-{{/if}}
+
 
 <script src="/javascript/dashboard.js"></script>

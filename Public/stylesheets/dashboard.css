@@ -30,3 +30,56 @@
 .info-section {
     margin: 3vh 0 5vh 0;
 }
+
+.your-trails-title {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.post-new-trail {
+    margin-bottom: 10vh;
+    border: 5px solid var(--accent-color);
+    box-shadow: 3px 3px var(--dark-text);
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-button-text {
+    font-size: xx-large;
+    margin-bottom: 2vh;
+}
+
+.label-col {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.label-col label {
+    padding-top: 1vh;
+}
+
+.input-col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-col input {
+    margin-top: .5vh;
+}
+
+.add-trail-holder {
+    margin: 3vh 0;
+    border: 5px solid var(--accent-color);
+    
+}
+
+.add-trail {
+    font-size: large;
+    color: var(--accent-color);
+    font-weight: bold;
+}

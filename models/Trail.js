@@ -31,11 +31,11 @@ Trail.init(
         },
         lat: {
             type: DataTypes.DECIMAL(10,7),
-            allowNull: false
+            allowNull: true
         },
         lon: {
             type: DataTypes.DECIMAL(10,7),
-            allowNull: false
+            allowNull: true
         },
         difficulty: {
             type: DataTypes.STRING,
