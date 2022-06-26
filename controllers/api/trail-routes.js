@@ -77,7 +77,8 @@ router.put('/:id', withAuth, (req, res) => {
             kilometers: req.body.kilometers,
             lat: req.body.lat,
             lon: req.body.lon,
-            difficulty: req.body.difficulty
+            difficulty: req.body.difficulty,
+            blurb: req.body.blurb
         },
         {
             where: {
