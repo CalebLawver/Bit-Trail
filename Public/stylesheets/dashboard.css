@@ -13,7 +13,6 @@
     position: relative;
 }
 
-
 .user-info-holder {
     margin-top: 3vh;
     /* border: 5px solid var(--accent-color);
@@ -40,6 +39,7 @@
 .info-section {
     margin: 3vh 0 5vh 0;
     color: white;
+    text-align: center;
 }
 
 .your-trails-title {
