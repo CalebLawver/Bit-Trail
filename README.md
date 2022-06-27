@@ -24,4 +24,4 @@ We used a plethora of technologies which included Node.js and Express.js. Other 
 
 ## End Product
 
-![Alt Text](https://files.slack.com/files-pri/T03352YRB5K-F03M0PS67DL/image.png)
+https://files.slack.com/files-pri/T03352YRB5K-F03M0PS67DL/image.png
