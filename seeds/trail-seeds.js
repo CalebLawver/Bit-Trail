@@ -80,6 +80,17 @@ const traildata = [
     blurb: "DO IT!!!hqwegqwgewegwgeqwegETIME!!!",
     user_id: 1,
   },
+  {
+    tname: "Delicate Arch Trail",
+    address: "Arches National Park, Moab, UT 84532",
+    miles: 3,
+    kilometers: 4.8,
+    lat: 40.61353,
+    lon: -111,
+    difficulty: "Medium",
+    blurb: "Takes you to one of the famous rock formations in the world! The views at the end are absolutely worth it.",
+    user_id: 1,
+  }
 ];
 
 const seedTrails = () => Trail.bulkCreate(traildata);
