@@ -36,14 +36,14 @@ function generatePosts (url, holderId) {
                                   <p>${cutBlurb(blurb, 120)}</p>
                               </div>
                           </div>
-                          <div class="row"> 
-                              <div class="col poster">
+                          <div class="row">
+                            <div class="col-3">
+                                <a href="/api/trails/${id}"><button class="add-trail">Trail Info</button></a>
+                            </div>
+                              <div class="col-9 poster">
                                   <h4>Posted by: ${data[i].user.username}</h4>
                               </div>
                           </div>
-                        <div class="col-3">
-                            <a href="/api/trails/${id}"><button class="add-trail">Trail Reviews</button></a>
-                        </div>
                       </div>
                   </div>
               </div>     
