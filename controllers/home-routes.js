@@ -12,9 +12,6 @@ router.get('/', (req, res) => {
         ],
         order: [
             ['created_at', 'ASC']
-        ],
-        limit: [
-            6
         ]
     })
     .then(dbTrailData => {
