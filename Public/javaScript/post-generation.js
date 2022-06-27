@@ -14,7 +14,7 @@ function generatePosts (url, holderId) {
           //generate the internals of the post
           let { id, tname, address, miles, kilometers, difficulty, blurb } = data[i];
           let postText = `
-                  <div class="col-6">
+                  <div class="col-lg-6 col-12">
                       <div class="holder">
                       <div class="container">
                           <div class="row post-title-line">
