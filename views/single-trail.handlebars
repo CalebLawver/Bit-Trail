@@ -1,34 +1,8 @@
-{{!-- <div class="col-9">
-    <div class="holder">
-        <div class="container">
-            <div class="row post-title-line">
-                <div class="col-8">
-                    <h2>{{tname}}</h2>
-                </div>
-                <div class="col-4 difficulty {{difficulty}}">
-                    <h2>{{difficulty}}</h2>
-                </div>
-            </div>
-        <div class="row">
-            <h4>{{address}}</h4>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <p>Miles: {{miles}}<br />Kilometers:
-                    {{kilometers}}</p>
-            </div>
-                <div class="col-6">
-                    <p>{{blurb}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
-
 {{> trail-info trail}}
 
 <div class="col-6">
     {{!-- Generate reviews --}}
+    {{> Review trail.review}}
 </div>
 
 <script src="/javascript/single-trail"></script>

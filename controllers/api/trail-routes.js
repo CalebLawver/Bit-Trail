@@ -34,7 +34,11 @@ router.get('/:id', (req, res) => {
             },
             {
                 model: Review,
-                attributes: ['rev_text', 'rev_diff']
+                attributes: ['id', 'rev_text', 'rev_diff', 'user_id', 'trail_id', 'created_at'],
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
             }
         ]
     })
