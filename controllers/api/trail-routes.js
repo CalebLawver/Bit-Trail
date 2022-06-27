@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Trail, User } = require('../../models');
+const { Trail, User, Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all trails
@@ -31,15 +31,21 @@ router.get('/:id', (req, res) => {
             {
                 model: User,
                 attributes: ['username']
+            },
+            {
+                model: Review,
+                attributes: ['rev_text', 'rev_diff']
             }
         ]
     })
     .then(dbTrailData => {
-        if (!dbTrailData) {
+        if (dbTrailData) {
+            const trail = dbTrailData.get({ plain: true });
+            res.render('single-trail', {trail, loggedIn: true});
+            } else {
             res.status(404).json({ message: 'No trail found with that id' });
             return;
         }
-        res.json(dbTrailData);
     })
     .catch(err => {
         console.log(err);

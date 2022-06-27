@@ -42,7 +42,7 @@ function generatePosts (url, holderId) {
                               </div>
                           </div>
                         <div class="col-3">
-                            <a href="/api/trails/${id}"><button class="add-trail">Trail's Page</button></a>
+                            <a href="/api/trails/${id}"><button class="add-trail">Trail Reviews</button></a>
                         </div>
                       </div>
                   </div>
