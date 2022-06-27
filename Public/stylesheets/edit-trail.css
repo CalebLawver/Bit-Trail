@@ -1,0 +1,25 @@
+:root {
+    --white: #FFFFFF;
+    --accent-color: rgba(50, 145, 50, 0.7);
+    --grey: #C2C2C2;
+    --dark-text: rgb(29, 29, 29);
+    --black: #000000;
+}
+
+.edit-title {
+    color: var(--dark-text);
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.back-button {
+    margin: 3vh 2vw;
+    padding: 10px;
+    border: 3px solid var(--accent-color);
+    display: inline-block;
+    font-weight: bold;
+}
+
+.edit-trial {
+    padding-top: 2vh;
+}

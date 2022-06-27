@@ -28,6 +28,6 @@ async function newFormHandler() {
         alert(response.statusText);
       }
     }
-    
+
 document.getElementById('add-new-trail').addEventListener('onClick', newFormHandler);
     

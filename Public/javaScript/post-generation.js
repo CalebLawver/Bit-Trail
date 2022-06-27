@@ -71,4 +71,4 @@ function roundOnePlace(number) {
     return (Math.round(rounded))/10
 }
 
-generatePosts('https://bit-trail.herokuapp.com/api/trails', '#post-holder');
+generatePosts('/api/trails', '#post-holder');

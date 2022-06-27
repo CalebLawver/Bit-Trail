@@ -34,4 +34,19 @@ async function editFormHandler(event) {
     }
 }
 
-document.getElementById('.edit-trail-form').addEventListener('onClick', editFormHandler);
+async function deleteTrail() {
+    let url = window.location.href;
+    url = url.toString();
+    const response = await fetch(`/api/trails/${url.split("/").pop()}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+
+    if (response.ok) {
+        document.location.replace('/create-trails');
+      } else {
+        alert(response.statusText);
+    }
+  }  
