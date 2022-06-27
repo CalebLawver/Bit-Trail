@@ -30,6 +30,24 @@ const reviewdata = [
         rev_diff: "Medium",
         user_id: 3,
         trail_id: 5,
+    },
+    {
+        rev_text: "My legs are absolutely wrecked, but the view from the top was incredible.",
+        rev_diff: "Hard",
+        user_id: 3,
+        trail_id: 1,
+    },
+    {
+        rev_text: "Never again.",
+        rev_diff: "Hard",
+        user_id: 1,
+        trail_id: 1,
+    },
+    {
+        rev_text: "A little bit strenuous but definitely would do it again.",
+        rev_diff: "Medium",
+        user_id: 3,
+        trail_id: 5,
     }
 ];
 
