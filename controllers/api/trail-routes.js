@@ -2,6 +2,8 @@ const router = require('express').Router();
 const sequelize = require('../../config/connection');
 const { Trail, User, Review } = require('../../models');
 const withAuth = require('../../utils/auth');
+const joi = require('joi');
+const trailSchema = require('../../joi-tests/trailSchema')
 
 // get all trails
 router.get('/', (req, res) => {
@@ -58,6 +60,13 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
+    const {error, value } = trailSchema.validate(req.body);
+
+    if(error) {
+        console.log(error.details)
+      return res.status(400).json(err);
+    }
+
     Trail.create({
         tname: req.body.tname,
         address: req.body.address,

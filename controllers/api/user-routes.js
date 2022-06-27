@@ -1,5 +1,7 @@
 const router = require('express').Router();
 const { Trail, User } = require('../../models');
+const joi = require('joi');
+const userSchema = require('../../joi-tests/userSchema')
 
 // getting all users
 router.get('/', (req, res) => {
@@ -40,6 +42,11 @@ router.get('/:id', (req, res) => {
   });
 
   router.post('/', (req, res) => {
+    const {error, value } = userSchema.validate(req.body);
+
+    if(error) {
+      return res.status(400).json(err);
+    }
     User.create({
         username: req.body.username,
         email: req.body.email,

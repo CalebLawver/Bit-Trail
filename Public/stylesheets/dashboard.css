@@ -87,8 +87,7 @@
 
 .add-trail-holder {
     margin: 3vh 0;
-    border: 5px solid var(--accent-color);
-    
+    border: 5px solid var(--accent-color); 
 }
 
 .delete-trail-holder {
@@ -100,6 +99,7 @@
     font-size: large;
     color: var(--accent-color);
     font-weight: bold;
+    padding: 0 5px;
 }
 
 .delete-trail {

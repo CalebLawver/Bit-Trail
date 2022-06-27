@@ -1,3 +1,4 @@
+const { required } = require("joi");
 const { Trail } = require("../models");
 
 const traildata = [
@@ -22,7 +23,7 @@ const traildata = [
     difficulty: "Medium",
     blurb:
       "Pay attention to the trails you go on, there are many offshoots that can be very challenging, especially to go down.",
-    user_id: 1,
+    user_id: 2,
   },
   {
     tname: "Cecret Lake Trail",
@@ -45,7 +46,7 @@ const traildata = [
     lon: -111.8082,
     difficulty: "Medium",
     blurb: "DO IT!!!  EXPERIENCE OF A LIFETIME!!!",
-    user_id: 1,
+    user_id: 3,
   },
   {
     tname: "Grandeur Peak East Trail from Church Fork",
@@ -56,31 +57,32 @@ const traildata = [
     lon: -111,
     difficulty: "Medium",
     blurb: "DO IT!!!  EXPERIENCE OF A LIFETIME!!!",
-    user_id: 1,
+    user_id: 2,
   },
   {
-    tname: "SUPER DUPER AWESOME",
+    tname: "Lake Mary Trail, Salt Lake City, UT 84121",
     address: "Lake Mary Trail, Salt Lake City, UT 84121",
     miles: 4.6,
     kilometers: 4.2,
     lat: 40.61353,
     lon: -111,
     difficulty: "Medium",
-    blurb: "DasdaahefwLIFETIME!!!",
-    user_id: 1,
+    blurb: "It was awesome!!",
+    user_id: 3,
   },
   {
-    tname: "Graahagweawwwwwwwwgdsdsdag Church Fork",
-    address: "Lakeghqwegewwegwgegeqgweqasdgfasfe City, UT 84121",
+    tname: "Church Fork",
+    address: "8 South Wagon Rd Lynchburg, VA 24502",
     miles: 2.6,
     kilometers: 4.2,
     lat: 40.61353,
     lon: -111,
     difficulty: "Medium",
-    blurb: "DO IT!!!hqwegqwgewegwgeqwegETIME!!!",
+    blurb: "DO IT!!!!!!",
     user_id: 1,
   },
 ];
+
 
 const seedTrails = () => Trail.bulkCreate(traildata);
 
